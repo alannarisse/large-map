@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="mapland">
+      <img id="map" src="images/map.png" />
+      <a href="windmill.html" class="windmill">windmill</a>
+      <div id="center"></div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script>
+      document.getElementById('center').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' })
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

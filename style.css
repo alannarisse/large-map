@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+section#mapland {
+  width: 4000px;
+  height: 4000px;
+  margin: auto;
+  overflow: scroll;
+  position: relative;
+}
+#map {
+  width: 100%;
+  cursor: move;
+  position: absolute;
+}
+
+#center {
+  position: absolute;
+  left: 1950px;
+  top: 1650px;
+  width: 100px;
+  height: 100px;
+  /* border: 2px solid red; */
+}
+
+.windmill {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 26%;
+  left: 30%;
+  border: 1px solid purple;
+}
+a {
+  z-index: 2;
+}
