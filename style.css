@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
 }
@@ -13,6 +16,7 @@ section#mapland {
   width: 100%;
   cursor: move;
   position: absolute;
+  z-index: 0;
 }
 
 #center {
@@ -29,10 +33,38 @@ section#mapland {
   width: 60px;
   height: 60px;
   position: absolute;
+  z-index: 4;
   top: 26%;
   left: 30%;
-  border: 1px solid purple;
+  border: 2px solid purple;
 }
 a {
   z-index: 2;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+p:not(.one) {
+  display: none;
+}
+br {
+  margin-bottom: 10px;
+}
+.button {
+  display: inline-block;
+  background-color: aquamarine;
+  color: darkcyan;
+  text-decoration: none;
+  margin: 20px;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid darkcyan;
+}
+.button:hover {
+  background-color: darkcyan;
+  color: aquamarine;
+  text-decoration: none;
+  border: 1px solid aquamarine;
 }
